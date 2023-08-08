@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Responsive Portfolio Website</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">Yashita R.</a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#qualification" class="nav_link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Qualification
+                        </a>
+                    </li>
+                    
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">
+                            <i class="uil uil-message nav__icon"></i> Contact me
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav_close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'am Yashita Rajkotia</h1>
+                        <div class="animation">
+                            <span id="element"></span>
+                            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                            <script>
+                                var typed = new Typed('#element', {
+                                    strings: ['I am a Web Developer.', 'I am an artist.', 'Know More About Me!'],
+                                    typeSpeed: 5,
+                                });
+                            </script>
+                        </div>
+                        <br>
+                        <!-- <h3 class="home__subtitle">Software developer</h3> -->
+                        <!-- <p class="home__description">High level experience in web design</p> -->
+                        <a href="#about" class="button button--flex">
+                            Scroll Down <i class="uil uil-arrow-down button__icon"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My introduction</span>
+
+            <div class="about__container container grid">
+                <img src="me.jpeg" alt="" class="about__img">
+                <div class="about__data">
+                    <p class="about__description">I am 22 year old engineer. Iconsider myself a responsible andorderly
+                        person. I stay verydedicated towards my goal and Ihave a unique perspective.</p>
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">03</span>
+                            <span class="about__info-name">Completed<br>projects</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">01</span>
+                            <span class="about__info-name">Companies<br>worked</span>
+                        </div>
+                    </div>
+                    <div class="about__buttons">
+                        <a download="" href="Yashita-Cv.pdf" class="button button--flex">Download CV
+                            <i class="uil uil-download-alt button__icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">Technical level</span>
+
+            <div class="skills__container container grid">
+                <div>
+                    <!-- Skills 1 -->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Frontend Skills</h1>
+                                
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__react"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Skills 2 -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-server-network skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Backend Skills</h1>
+                                
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">MS SQL Server</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__sql"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My personal journey</span>
+            <div class="qualification__container container">
+
+                <!-- QUALIFICATION CONTENT 1 -->
+                <div class="qualification__sections">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Education
+                        </div>
+                    </div>
+                    <div class="qualification_content">
+                        <!-- qualification 1 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">AC Patil College of Eng.</h3>
+                                <span class="qualification__subtitle">Information Technology</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2019-2023 | 8.60cgpa
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- qualification 2 -->
+                        <div class="qualification__data">
+
+                            <div>
+                                <h3 class="qualification__title">Moolji Jetha College</h3>
+                                <span class="qualification__subtitle">12th Science</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017-2019 | 64.46%
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- qualification 3 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Orion English Medium School</h3>
+                                <span class="qualification__subtitle"></span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017 | 83.60%
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 2 -->
+                <div class="qualification__sections">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Work
+                        </div>
+                    </div>
+                    <div class="qualification_content">
+                        <!-- work 1 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Xangars Solutions Pvt. Ltd.</h3>
+                                <span class="qualification__subtitle">Software Developer Intern</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    April-23 to July-23
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Contact No.</h3>
+                            <span class="contact__subtitle">9545627276</span>
+                        </div>
+
+                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">yashitarajkotia@gmail.com</span>
+                        </div>
+
+                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Navi Mumbai</span>
+                        </div>
+
+                    </div>
+                </div>
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="" class="button button--flex">
+                            Send Message
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+
+        <div class="footer__container">
+            <div class="social__icons">
+                <a href="https://www.linkedin.com/in/yashita-rajkotia-1755011b6/" target="_blank">
+                    <i class="uil uil-linkedin-alt"></i>
+                </a>
+                <a href="https://github.com/yashita9" target="_blank">
+                    <i class="uil uil-github-alt"></i>
+                </a>
+            </div>
+            <div class="footer__nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#qualification">Qualification</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__bottom">
+                <p>Copyright &copy;2023; Designed by <span class="designer">Yashita</span></p>
+            </div>
+        </div>
+    
+    </footer>
+    <!--==================== MAIN JS ====================-->
+    <script src="main.js"></script>
+</body>
+
+</html>
